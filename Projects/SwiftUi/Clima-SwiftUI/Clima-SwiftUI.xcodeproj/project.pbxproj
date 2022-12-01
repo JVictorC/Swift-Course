@@ -12,6 +12,7 @@
 		F37593F0288D8C46003171D6 /* WeatherHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37593EF288D8C46003171D6 /* WeatherHeader.swift */; };
 		F37593F2288D8C6F003171D6 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37593F1288D8C6F003171D6 /* WeatherInfo.swift */; };
 		F38449B22890B780007911FF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38449B12890B780007911FF /* LocationManager.swift */; };
+		F3CD72EF28976A9D00DA5AB8 /* ClientHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD72EE28976A9D00DA5AB8 /* ClientHttp.swift */; };
 		F3D7D378288CC3D40022EF76 /* Clima_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7D377288CC3D40022EF76 /* Clima_SwiftUIApp.swift */; };
 		F3D7D37A288CC3D40022EF76 /* WatherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7D379288CC3D40022EF76 /* WatherHomeView.swift */; };
 		F3D7D37C288CC3D70022EF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D7D37B288CC3D70022EF76 /* Assets.xcassets */; };
@@ -20,6 +21,16 @@
 		F3F4F493288D86C90002F3E4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F4F492288D86C90002F3E4 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F3CD72E9289769FE00DA5AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D7D36C288CC3D40022EF76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D7D373288CC3D40022EF76;
+			remoteInfo = "Clima-SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F30F557328930A2400B0B791 /* Cordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinate.swift; sourceTree = "<group>"; };
 		F315910F288DFEDD007D1585 /* WeatherDataConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataConvert.swift; sourceTree = "<group>"; };
@@ -27,6 +38,8 @@
 		F37593F1288D8C6F003171D6 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		F38449B12890B780007911FF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F38449B32890B81B007911FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3CD72E5289769FE00DA5AB8 /* Clima-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clima-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD72EE28976A9D00DA5AB8 /* ClientHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHttp.swift; sourceTree = "<group>"; };
 		F3D7D374288CC3D40022EF76 /* Clima-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clima-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7D377288CC3D40022EF76 /* Clima_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F3D7D379288CC3D40022EF76 /* WatherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherHomeView.swift; sourceTree = "<group>"; };
@@ -37,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3CD72E2289769FE00DA5AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3D7D371288CC3D40022EF76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				F38449B12890B780007911FF /* LocationManager.swift */,
+				F3CD72EE28976A9D00DA5AB8 /* ClientHttp.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -101,10 +122,18 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		F3CD72E6289769FE00DA5AB8 /* Clima-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Clima-SwiftUITests";
+			sourceTree = "<group>";
+		};
 		F3D7D36B288CC3D40022EF76 = {
 			isa = PBXGroup;
 			children = (
 				F3D7D376288CC3D40022EF76 /* Clima-SwiftUI */,
+				F3CD72E6289769FE00DA5AB8 /* Clima-SwiftUITests */,
 				F3D7D375288CC3D40022EF76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D7D374288CC3D40022EF76 /* Clima-SwiftUI.app */,
+				F3CD72E5289769FE00DA5AB8 /* Clima-SwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +179,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3CD72E4289769FE00DA5AB8 /* Clima-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD72ED289769FE00DA5AB8 /* Build configuration list for PBXNativeTarget "Clima-SwiftUITests" */;
+			buildPhases = (
+				F3CD72E1289769FE00DA5AB8 /* Sources */,
+				F3CD72E2289769FE00DA5AB8 /* Frameworks */,
+				F3CD72E3289769FE00DA5AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3CD72EA289769FE00DA5AB8 /* PBXTargetDependency */,
+			);
+			name = "Clima-SwiftUITests";
+			productName = "Clima-SwiftUITests";
+			productReference = F3CD72E5289769FE00DA5AB8 /* Clima-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3D7D373288CC3D40022EF76 /* Clima-SwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3D7D382288CC3D70022EF76 /* Build configuration list for PBXNativeTarget "Clima-SwiftUI" */;
@@ -176,6 +224,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					F3CD72E4289769FE00DA5AB8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F3D7D373288CC3D40022EF76;
+					};
 					F3D7D373288CC3D40022EF76 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -195,11 +247,19 @@
 			projectRoot = "";
 			targets = (
 				F3D7D373288CC3D40022EF76 /* Clima-SwiftUI */,
+				F3CD72E4289769FE00DA5AB8 /* Clima-SwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3CD72E3289769FE00DA5AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3D7D372288CC3D40022EF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +272,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3CD72E1289769FE00DA5AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3D7D370288CC3D40022EF76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +287,7 @@
 				F3D7D378288CC3D40022EF76 /* Clima_SwiftUIApp.swift in Sources */,
 				F3159110288DFEDD007D1585 /* WeatherDataConvert.swift in Sources */,
 				F37593F2288D8C6F003171D6 /* WeatherInfo.swift in Sources */,
+				F3CD72EF28976A9D00DA5AB8 /* ClientHttp.swift in Sources */,
 				F37593F0288D8C46003171D6 /* WeatherHeader.swift in Sources */,
 				F30F557428930A2400B0B791 /* Cordinate.swift in Sources */,
 				F3F4F493288D86C90002F3E4 /* WeatherModel.swift in Sources */,
@@ -230,7 +298,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F3CD72EA289769FE00DA5AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3D7D373288CC3D40022EF76 /* Clima-SwiftUI */;
+			targetProxy = F3CD72E9289769FE00DA5AB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F3CD72EB289769FE00DA5AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2URWL77F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jvictorc.course.Clima-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clima-SwiftUI.app/Clima-SwiftUI";
+			};
+			name = Debug;
+		};
+		F3CD72EC289769FE00DA5AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2URWL77F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jvictorc.course.Clima-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clima-SwiftUI.app/Clima-SwiftUI";
+			};
+			name = Release;
+		};
 		F3D7D380288CC3D70022EF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +522,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3CD72ED289769FE00DA5AB8 /* Build configuration list for PBXNativeTarget "Clima-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD72EB289769FE00DA5AB8 /* Debug */,
+				F3CD72EC289769FE00DA5AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3D7D36F288CC3D40022EF76 /* Build configuration list for PBXProject "Clima-SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

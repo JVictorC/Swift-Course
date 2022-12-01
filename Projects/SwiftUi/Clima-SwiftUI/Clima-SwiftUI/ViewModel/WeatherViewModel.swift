@@ -8,13 +8,20 @@
 import Foundation
 
 class WeatherViewModel: ObservableObject {
-    var isLoadingData = true
-    
     @Published var weatherModel: WeatherModel = WeatherModel(id: 0, nameCity: "", weatherCelsius: 0)
     
     
     private let urlBase = "https://api.openweathermap.org/data/2.5/weather?appid=344540684f9db6f19120a1d2be3b28c4&units=metric"
     
+    var isLoadingData = true
+    
+    private var clietHttp: ClientHttp
+    
+    init(clientHttp: ClientHttp) {
+        self.clietHttp = clientHttp
+    }
+    
+
     
     func requestbyNameCity(with: String) {
         let urlString = "\(urlBase)&q=\(with)"
